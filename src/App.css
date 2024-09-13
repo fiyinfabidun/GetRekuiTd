@@ -1139,6 +1139,10 @@ span{
   text-align: center;
   font-family: 'bold-sharp';
 }
+.pay-grid p{
+  width: 38%;
+  text-align: center;
+}
 
 @keyframes spin {
   0%{

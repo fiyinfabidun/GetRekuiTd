@@ -16,8 +16,8 @@ function PaymentSuccess() {
        <h1>Payment made successfully</h1>
        <p>We’ve received your subscription successfully. Proceed to your dashboard to track your automated job processes</p>
        <div className="buttons">
-        <button></button>
-        <button></button>
+        <button>Just Resume Review</button>
+        <button> Proceed to dashboard</button>
        </div>
       </div>
     </>
