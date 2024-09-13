@@ -126,7 +126,7 @@ function TailoredJobs() {
              <h3>(Europe, US etc)</h3>
                 <h2>$110</h2>
                 <p>/per month</p>
-                <button><p><Link to='/Paymentsucess'>Get Started</Link></p></button>
+                <button><p><Link to='/Paysucess'>Get Started</Link></p></button>
              </div>
 
            </div>

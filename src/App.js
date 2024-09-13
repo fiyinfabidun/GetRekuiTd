@@ -36,7 +36,7 @@ function App() {
       <Route path='/tailoredJobs' element={<TailoredJobs/>}></Route>
       <Route path='/limitedUser' element={<LimitedUser/>}></Route>
       <Route path='/Resumefeedback' element={<ResumeFeedback/>}></Route>
-      <Route path='/Paymentsuccess' element={<PaymentSucess/>}></Route>
+      <Route path='/Paysucess' element={<PaymentSucess/>}></Route>
       </Routes>
        
       </BrowserRouter>
