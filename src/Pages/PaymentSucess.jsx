@@ -5,7 +5,10 @@ import Navbar from "../Components/Navbar";
 function PaymentSucess() {
   return (
     <>
-   <Navbar/>
+    <div className="pay">
+    <Navbar/>
+    </div>
+
     </>
   )
 }
