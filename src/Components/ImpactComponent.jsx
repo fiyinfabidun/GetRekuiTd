@@ -58,7 +58,7 @@ function ImpactComponent() {
       </div>
 
       <div className="ic">
-
+    
        <MdLock style={{
         fontSize:'23px',
         color:'#8F919B'
