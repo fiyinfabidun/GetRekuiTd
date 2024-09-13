@@ -8,6 +8,11 @@ function PaymentSucess() {
     <div className="pay">
     <Navbar/>
     </div>
+    <div className="pay-grid">
+        <div className="loader">
+            
+        </div>
+    </div>
 
     </>
   )
