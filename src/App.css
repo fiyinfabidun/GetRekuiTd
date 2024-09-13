@@ -1116,7 +1116,7 @@ span{
 .pay nav ul li a{
   color: #000316;
 }
-.pay .navbar .logo p{
+.navbar{
   color: #000316;
 }
 .pay-grid{
@@ -1541,5 +1541,15 @@ padding: 50px;
 }
 .ic-text{
   width: 50%;
+}
+.pay-grid h1{
+  font-size: 30px;
+  width: 80%;
+}
+.load{
+  font-size: 100px;
+}
+.pay-grid p{
+  width: 90%;
 }
 }
