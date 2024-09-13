@@ -118,7 +118,7 @@ function TailoredJobs() {
                 <h3> </h3>
                 <h2>$50</h2>
                 <p>/per month</p>
-                <button><p><Link to='/Paymentsucess'>Get Started</Link></p></button>
+                <button><p><Link to='/Paysucess'>Get Started</Link></p></button>
              </div>
 
              <div className="price-box">

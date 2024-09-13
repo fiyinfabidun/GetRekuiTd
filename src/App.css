@@ -1122,6 +1122,7 @@ span{
   justify-content: center;
   align-items: center;
   margin-top: 40px;
+  gap: 20px;
 }
 .load{
   font-size: 200px;
@@ -1130,7 +1131,7 @@ span{
   animation: spin 1s linear infinite;
 }
 .loader{
-  margin: 40px 0;
+  margin: 20px 0;
 }
 .pay-grid h1{
   font-size: 48px;
@@ -1151,6 +1152,10 @@ span{
   100%{
     transform: rotate(360deg);
   }
+}
+
+.pay-grid .buttons{
+  padding: 10px 0;
 }
 /* MEDIA */
 
