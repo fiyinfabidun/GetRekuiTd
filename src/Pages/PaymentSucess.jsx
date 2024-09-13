@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
-import { motion } from "framer-motion"; // Importing framer-motion
 
 function PaymentSuccess() {
 
