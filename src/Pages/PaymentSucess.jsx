@@ -1,8 +1,9 @@
-import React from "react"
+import React from "react";
+import Navbar from '../Components'
 function PaymentSucess() {
   return (
     <>
- 
+    <Navbar/>
     </>
   )
 }
