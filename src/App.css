@@ -1112,7 +1112,20 @@ span{
   font-size: 14px;
 }
 /* PAYMENT SUCESSFUL */
+.loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full-screen height */
+}
 
+.loader {
+  width: 80px;  /* Width of the loader */
+  height: 40px; /* Height for half-circle */
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  background: #3498db; /* Color of the loader */
+}
 /* MEDIA */
 
 @media screen and (max-width: 750px) {
