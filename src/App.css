@@ -1121,7 +1121,32 @@ span{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 40px;
+}
+.load{
+  font-size: 200px;
+  font-family: 'sharp sans';
+  color: #4CAF50;
+  animation: spin 1s linear infinite;
+}
+.loader{
+  margin: 40px 0;
+}
+.pay-grid h1{
+  font-size: 48px;
+  color: var(--primary-color);
+  width: 40%;
+  text-align: center;
+  font-family: 'bold-sharp';
+}
+
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }
 /* MEDIA */
 
