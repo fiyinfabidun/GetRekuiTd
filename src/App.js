@@ -11,6 +11,7 @@ import Assesment from './Pages/Assesment';
 import TailoredJobs from './Pages/TailoredJobs';
 import LimitedUser from './Pages/LimitedUser';
 import ResumeFeedback from './Pages/ResumeFeedback';
+import PaymentSucess from './Pages/PaymentSucess';
 
 function App() {
   const ScrollToTop = () => {
@@ -35,6 +36,7 @@ function App() {
       <Route path='/tailoredJobs' element={<TailoredJobs/>}></Route>
       <Route path='/limitedUser' element={<LimitedUser/>}></Route>
       <Route path='/Resumefeedback' element={<ResumeFeedback/>}></Route>
+      <Route path='/Paymentsuccess' element={<PaymentSucess/>}></Route>
       </Routes>
        
       </BrowserRouter>

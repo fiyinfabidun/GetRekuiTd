@@ -1111,7 +1111,10 @@ span{
   font-family: 'semibold';
   font-size: 14px;
 }
+/* PAYMENT SUCESSFUL */
+
 /* MEDIA */
+
 @media screen and (max-width: 750px) {
   li{
     display: flex;
