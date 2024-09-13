@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
-import { motion } from "framer-motion";
+// import Navbar from "../Components/Navbar";
+// import { motion } from "framer-motion";
 
 function PaymentSucess() {
   return (
     <>
-    <Navbar/>
+    {/* <Navbar/>
     <div className="pay-text">
 
     <motion.div
@@ -20,7 +20,8 @@ function PaymentSucess() {
       <div className="loader"></div>
     </motion.div>
 
-    </div>
+    </div> */}
+    <p>sucess</p>
     </>
   )
 }
