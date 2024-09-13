@@ -1116,6 +1116,9 @@ span{
 .pay nav ul li a{
   color: #000316;
 }
+.pay .navbar .logo p{
+  color: #000316;
+}
 .pay-grid{
   display: flex;
   flex-direction: column;
