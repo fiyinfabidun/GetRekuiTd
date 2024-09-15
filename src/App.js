@@ -12,7 +12,7 @@ import TailoredJobs from './Pages/TailoredJobs';
 import LimitedUser from './Pages/LimitedUser';
 import ResumeFeedback from './Pages/ResumeFeedback';
 import PaymentSucess from './Pages/PaymentSucess';
-
+import './dashboard.css';
 function App() {
   const ScrollToTop = () => {
     const { pathname } = useLocation();
