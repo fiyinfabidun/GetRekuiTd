@@ -13,6 +13,7 @@ import LimitedUser from './Pages/LimitedUser';
 import ResumeFeedback from './Pages/ResumeFeedback';
 import PaymentSucess from './Pages/PaymentSucess';
 import './dashboard.css';
+import Dashboard from './Pages/Dashboard/Dashboard';
 function App() {
   const ScrollToTop = () => {
     const { pathname } = useLocation();
@@ -37,6 +38,7 @@ function App() {
       <Route path='/limitedUser' element={<LimitedUser/>}></Route>
       <Route path='/Resumefeedback' element={<ResumeFeedback/>}></Route>
       <Route path='/Paysucess' element={<PaymentSucess/>}></Route>
+      <Route path='/dashboard' element={<Dashboard/>}></Route>
       </Routes>
        
       </BrowserRouter>

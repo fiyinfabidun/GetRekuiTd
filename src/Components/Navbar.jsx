@@ -22,7 +22,7 @@ function Navbar() {
 
                         <li><p><Link to='/ResumeFeedback'>Review Resume</Link></p> { isMobile && <MdArrowRightAlt/>}</li>
                     </ul>
-                    <button>My Dashboard</button>
+                    <button><p><Link to='/dashboard'>My Dashboard</Link></p></button>
                 </nav>
                
 
