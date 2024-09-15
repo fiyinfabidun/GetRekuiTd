@@ -14,6 +14,8 @@
     --box-shadow:20px 20px 30px rgba(0, 0, 0, 0.04);
     --faint-text:#8F919B;
     --tailored-bg:#020827;
+    --dashboard-bg:#F5F6FB;
+
   
   }
   
@@ -72,6 +74,23 @@
     border: 2px solid white;
   }
   .container{
-    width: 90%;
+    width: 95%;
     margin: auto;
+    padding-top: 10px;
+  }
+  .dashboard.container{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 14rem auto 23rem;
+  }
+  .sidebar a{
+    color: #020827;
+  }
+  .dash{
+    background-color: var(--dashboard-bg);
+    width: 100vw;
+    height: 100vh;
+  }
+  aside{
+   
   }
