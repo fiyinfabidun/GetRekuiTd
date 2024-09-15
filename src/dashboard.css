@@ -74,16 +74,16 @@
     border: 2px solid white;
   }
   .container{
-    width: 95%;
-    margin: auto;
-    padding-top: 10px;
+    width: 100%;
+    margin:0 auto;
   }
+
   .dashboard.container{
     display: grid;
     gap: 30px;
     grid-template-columns: 14rem auto 23rem;
   }
-  .sidebar a{
+aside a{
     color: #020827;
   }
   .dash{
@@ -92,5 +92,53 @@
     height: 100vh;
   }
   aside{
-   
+   height: 100vh;
+   background-color: var(--White-color);
+   box-shadow: var(--box-shadow);
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 10px 0;
+   gap: 20px;
+
+  }
+  .sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .top{
+    display:flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+  .top .log{
+     padding-top:20px;
+  }
+  .sidebar h3,
+  .top .log,
+  .logout h3{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 2rem;
+  }
+  .sidebar h3{
+    position: relative;
+    height: 1.6rem;
+    transition: all 300ms ease;
+  }
+  .sidebar h3 span{
+    padding-right: 10px;
+    font-size: 18px;
+  }
+  .log .close{
+    display: none;
+  }
+  .sidebar h3 .active{
+    color: var(--primary-color);
+    border-left: 8px solid var(--primary-color);
+    transform: translateX(5px);
   }
