@@ -8,14 +8,15 @@ import { PiLaptopLight } from "react-icons/pi";
 import { GoPerson } from "react-icons/go";
 import { RiHomeLine } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
+import Jobtracker from './Jobtracker';
+import Myprofile from './Myprofile';
+import Myschedule from './Myschedule';
+import Overview from './Overview';
+import Techlab from './Techlab';
+
 
 const Dashboard = () => {
   const [active, setActive] = useState("Overview");
-
-  const handleActiveLink = (link) => {
-    setActive(link);
-  };
-
   return (
     <>
       <div className="dash">
@@ -30,57 +31,52 @@ const Dashboard = () => {
                 </div>
               </div>
               <div className="sidebar">
-                <h3 className={active === "Overview" ? "active" : ""}>
-                  <Link onClick={() => handleActiveLink("Overview")}>
-                    <span><CiGrid41 /></span>
-                    Overview
-                  </Link>
+                <h3
+                 onClick={()=>setActive('overview')}
+                 style={active === 'overview' ? activeLinks : {}}> 
+                 <span><CiGrid41/></span> Overview
                 </h3>
-                <h3 className={active === "Job Tracker" ? "active" : ""}>
-                  <Link onClick={() => handleActiveLink("Job Tracker")}>
-                    <span><LuLocateFixed /></span>
-                    Job Tracker
-                  </Link>
+                <h3
+                 onClick={()=>setActive('jobtracker')}
+                 style={active === 'jobtracker' ? activeLinks : {}}> 
+                 <span><LuLocateFixed/></span> Job Tracker
                 </h3>
-                <h3 className={active === "My schedule" ? "active" : ""}>
-                  <Link onClick={() => handleActiveLink("My schedule")}>
-                    <span><FaBusinessTime /></span>
-                    My schedule
-                  </Link>
+                <h3
+                 onClick={()=>setActive('myschedule')}
+                 style={active === 'myschedule' ? activeLinks : {}}> 
+                 <span><FaBusinessTime/></span> My Schedule
                 </h3>
-                <h3 className={active === "TechLab" ? "active" : ""}>
-                  <Link onClick={() => handleActiveLink("TechLab")}>
-                    <span><PiLaptopLight /></span>
-                    TechLab
-                  </Link>
+                <h3
+                 onClick={()=>setActive('techlab')}
+                 style={active === 'techlab' ? activeLinks : {}}> 
+                 <span><PiLaptopLight/></span>Tech Lab
                 </h3>
-                <h3 className={active === "My Profile" ? "active" : ""}>
-                  <Link onClick={() => handleActiveLink("My Profile")}>
-                    <span><GoPerson /></span>
-                    My Profile
-                  </Link>
+                <h3
+                 onClick={()=>setActive('myprofile')}
+                 style={active === 'myprofile' ? activeLinks : {}}> 
+                 <span><GoPerson/></span>My Profile
                 </h3>
+
               </div>
             </div>
             <div className="logout">
-              <h3 className={active === "Retun Home" ? "active" : ""}>
-                <Link onClick={() => handleActiveLink("Retun Home")}>
-                  <span><RiHomeLine /></span>
-                  Return Home
-                </Link>
-              </h3>
+            <h3>
+                <Link to='/'>
+                <span><RiHomeLine/></span>Return Home</Link>
+                </h3>
             </div>
           </aside>
 
 
         <div className="sidebar-content-display">
+           {active === 'overview' && <Overview/>}
+           {active === 'jobtracker' && <Jobtracker/>}
+           {active === 'myprofile' && <Myprofile/>}
+           {active === 'techlab' && <Techlab/>}
+           {active === 'myschedule' && <Myschedule/>}
 
         </div>
 
-        <div className="third-grid">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea vero blanditiis molestiae quia magnam maxime nostrum incidunt voluptas necessitatibus sunt ducimus, veniam placeat sequi. Facere vel libero eius reprehenderit eligendi.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dicta dignissimos fuga et voluptatum pariatur consectetur accusantium illo sint quae? Ullam voluptatem porro expedita repudiandae ipsum minima ab suscipit quia!</p>
-        </div>
 
 
         </div>
@@ -88,5 +84,13 @@ const Dashboard = () => {
     </>
   );
 };
+
+  const activeLinks = {
+      color:'#4042e2',
+      borderLeft: '8px solid #4042E2',
+      transform:'translateX(5px)',
+      padding:'10px'
+      
+  }
 
 export default Dashboard;

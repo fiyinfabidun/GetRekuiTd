@@ -14,6 +14,10 @@ import ResumeFeedback from './Pages/ResumeFeedback';
 import PaymentSucess from './Pages/PaymentSucess';
 import './dashboard.css';
 import Dashboard from './Pages/Dashboard/Dashboard';
+import Jobtracker from './Pages/Dashboard/Jobtracker';
+import Myprofile from './Pages/Dashboard/Myprofile';
+import Myschedule from './Pages/Dashboard/Myschedule';
+import Overview from './Pages/Dashboard/Overview';
 function App() {
   const ScrollToTop = () => {
     const { pathname } = useLocation();
@@ -39,7 +43,12 @@ function App() {
       <Route path='/Resumefeedback' element={<ResumeFeedback/>}></Route>
       <Route path='/Paysucess' element={<PaymentSucess/>}></Route>
       <Route path='/dashboard' element={<Dashboard/>}></Route>
-      </Routes>
+      <Route path='/jobtracker' element={<Jobtracker/>}></Route>
+      <Route path='/myprofile' element={<Myprofile/>}></Route>
+     <Route path='/myschedule' element={<Myschedule/>}></Route>
+     <Route path='/overview' element={<Overview/>}></Route>
+    </Routes>
+      
        
       </BrowserRouter>
    

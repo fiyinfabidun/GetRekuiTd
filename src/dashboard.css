@@ -67,10 +67,11 @@
     text-transform: capitalize;
     transition: all 0.5s ease-in-out;
     cursor: pointer;
+    background-color: #f9f9ff;
   }
   button:hover{
     opacity: 0.5;
-    transform: scale(1.1);
+    transform: scale(1);
     border: 2px solid white;
   }
   .container{
@@ -81,9 +82,9 @@
   .dashboard.container{
     display: grid;
     gap: 30px;
-    grid-template-columns: 14rem auto 23rem;
+    grid-template-columns: 14rem auto;
   }
-aside a{
+aside h3{
     color: #020827;
   }
   .dash{
@@ -128,6 +129,7 @@ aside a{
   .sidebar h3{
     position: relative;
     height: 1.6rem;
+    color: #020827;
     transition: all 300ms ease;
   }
   .sidebar h3 span{
@@ -137,8 +139,88 @@ aside a{
   .log .close{
     display: none;
   }
-  .sidebar h3 .active{
+  .sidebar h3:hover{
     color: var(--primary-color);
-    border-left: 8px solid var(--primary-color);
+    /* border-left: 8px solid var(--primary-color); */
     transform: translateX(5px);
+    padding: 10px;
+  }
+.sidebar-content-display{
+    height: 100vh;
+    overflow-y: auto;
+}
+  .overview{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: auto 24rem;
+    gap: 40px;
+  }
+  .main-overview,
+  .overview-board{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+  }
+.overview-board{
+    background-color: #6E63E5;
+    border-radius: 20px;
+    padding: 30px;
+    color: var(--White-color);
+}
+  .overview-board h3{
+    font-size: 34px;
+    text-align: left;
+  }
+  .buttons{
+    display: flex;
+    gap: 10px;
+   
+  }
+  .navdash{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+  }
+  .overview-cards{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+   
+  }
+  .vcard{
+    background-color: var(--White-color);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 20px;
+
+  }
+  .v-icon{
+    display: flex;
+    color: white;
+    background-color: #FDAAA4;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .vcard h4{
+    width: 80%;
+  }
+  .vcard p{
+    font-size: 24px;
+    color: var(--primary-color);
+    font-family: 'bold-sharp';
+  }
+  .recent > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
