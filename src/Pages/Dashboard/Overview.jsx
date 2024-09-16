@@ -93,7 +93,7 @@ const Overview = () => {
           <div className="recent">
             <div className="div">
             <h3>Recent Searches</h3>
-            <MdOutlineBusinessCenter/>
+            <MdOutlineBusinessCenter onClick={()=>setRecentSearches()}/>
             </div>
 
             <div className="gif">
