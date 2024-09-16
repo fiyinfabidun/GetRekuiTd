@@ -273,7 +273,10 @@ aside h3{
     gap: 20px;
     flex-direction: column;
 }
-
+/* menuu */
+.menu{
+  display: none;
+}
 
 
 
@@ -283,12 +286,14 @@ aside h3{
   .dashboard.container{
     grid-template-columns: 7rem auto;
   }
-  .log h2{
+  .log h2,
+  .log img{
     display: none;
   }
   .sidebar .ttl h3,
   .logout .lg h3{
     display: none;
+    transition: all 0.3s ease;
   }
   .sidebar .ttl span,
   .logout .lg span{
@@ -301,29 +306,42 @@ aside h3{
   .overview-cards{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
-}
-
-@media screen and (max-width:768px) {
-  aside{
-    z-index: 3;
-    width: 16rem;
-    position: relative;
-  }
-
-  .sidebar .ttl h3,
-  .logout .lg h3{
-    display: inline;
-  }
-  .sidebar .ttl{
-    height: 2.8rem;
-  }
   .log .close{
     display: block;
-    font-size: 30px;
-    margin-left: 10px;
-    color: var(--secondary-color);
+    font-size: 26px;
   }
-  .log h2{
+}
+
+@media screen and (max-width:850px) {
+  
+  .overview-cards{
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+  .overview{
+    grid-template-columns: auto;
+  }
+  .dashboard.container{
+    grid-template-columns: 6rem auto;
+    gap: 0px;
+    transition: all 0.3s ease;
+  }
+  .dashboard.container.active{
+    grid-template-columns: 18rem auto;
+    display: fixed;
+    z-index: 3;
+  }
+  .overview{
+    padding: 20px;
+  }
+  .overview-board{
+    gap: 10px;
+  }
+  .overview-board h3{
+    font-size: 26px;
+  }
+  .sidebar .ttl h3.show-link{
     display: inline;
+    color: #020827;
   }
+
 }

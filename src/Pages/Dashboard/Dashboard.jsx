@@ -7,26 +7,28 @@ import { FaBusinessTime } from "react-icons/fa";
 import { PiLaptopLight } from "react-icons/pi";
 import { GoPerson } from "react-icons/go";
 import { RiHomeLine } from "react-icons/ri";
-import { IoMdClose } from "react-icons/io";
+import { TbLayoutSidebarLeftCollapse } from "react-icons/tb";
 import Jobtracker from './Jobtracker';
 import Myprofile from './Myprofile';
 import Myschedule from './Myschedule';
 import Overview from './Overview';
 import Techlab from './Techlab';
 
+
 const Dashboard = () => {
   const [active, setActive] = useState("overview");
+  const [iss, Sww] = useState(false)
   return (
     <>
       <div className="dash">
-        <div className="dashboard container">
+        <div  className={iss?'dashboard container active':'dashboard container'}>
           <aside>
             <div className="top">
               <div className="log">
                 <img src={logo} alt="logo" />
                 <h2 style={{ fontSize: '18px' }}>GetReKuitd</h2>
-                <div className="close">
-                  <IoMdClose />
+                <div className="close" onClick={()=>Sww(!iss)}>
+                  <TbLayoutSidebarLeftCollapse/>
                 </div>
               </div>
               <div className="sidebar">
@@ -34,35 +36,35 @@ const Dashboard = () => {
                  onClick={()=>setActive('overview')}
                  style={active === 'overview' ? activeLinks : {}}> 
                  <span><CiGrid41/></span> 
-                 <h3>Overview</h3>
+                 <h3 className={iss? 'show-link': ''}>Overview</h3>
                 </div>
 
                 <div className='ttl'
                  onClick={()=>setActive('jobtracker')}
                  style={active === 'jobtracker' ? activeLinks : {}}> 
                  <span><LuLocateFixed/></span> 
-                 <h3>Job Tracker</h3>
+                 <h3 className={iss? 'show-link': ''}>Job Tracker</h3>
                 </div>
 
                 <div className='ttl'
                  onClick={()=>setActive('myschedule')}
                  style={active === 'myschedule' ? activeLinks : {}}> 
                  <span><FaBusinessTime/></span>
-                 <h3> My Schedule</h3>
+                 <h3 className={iss? 'show-link': ''}>My Schedule</h3>
                 </div>
 
                 <div className='ttl'
                  onClick={()=>setActive('techlab')}
                  style={active === 'techlab' ? activeLinks : {}}> 
                  <span><PiLaptopLight/></span>
-                 <h3>Tech Lab</h3>
+                 <h3 className={iss? 'show-link': ''}>Tech Lab</h3>
                 </div>
 
                 <div className='ttl'
                  onClick={()=>setActive('myprofile')}
                  style={active === 'myprofile' ? activeLinks : {}}> 
                  <span><GoPerson/></span>
-                 <h3>My Profile</h3>
+                 <h3 className={iss? 'show-link': ''}>My Profile</h3>
                 </div>
 
               </div>

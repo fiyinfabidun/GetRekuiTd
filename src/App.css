@@ -1162,6 +1162,23 @@ span{
 }
 /* MEDIA */
 
+@media screen and (max-width: 900px) {
+   .fourth-seg{
+    grid-template-columns: 1fr;
+
+   }
+   .fourth-seg img{
+    width: 100%;
+   }
+   .Scard{
+    width: 80%;
+   }
+   .text-seg{
+    width: 90%;
+    padding: 20px;
+   }
+}
+
 @media screen and (max-width: 750px) {
   li{
     display: flex;
@@ -1304,7 +1321,7 @@ span{
     }
     .text-seg{
       text-align: center;
-      width: 80%;
+      width: 90%;
       justify-content: center;
       padding: 40px 0;
     }
