@@ -221,11 +221,22 @@ aside h3{
     color: var(--primary-color);
     font-family: 'bold-sharp';
   }
-  .recent > div{
+  .recent .div{
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+  .gif,
+  .gif .no-search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .gif .no-search img{
+    width: 250px;
+  }
+
   .last-overview{
     background-color: var(--White-color);
     padding: 20px;
@@ -277,7 +288,6 @@ aside h3{
 .menu{
   display: none;
 }
-
 
 
 
