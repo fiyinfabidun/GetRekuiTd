@@ -328,12 +328,12 @@ height: 100vh;
 
 .card h2{
   font-size: 18px;
-  text-align: center;
+  text-align: left;
   padding: 20px 0;
   font-weight: bolder;
 }
 .card p{
-  text-align: center;
+  text-align: left;
 }
 
 .card{
@@ -342,7 +342,7 @@ height: 100vh;
   margin-top: 20px;
 }
 .card img{
-  align-self: center;
+  align-self: self-start;
 
 }
 
@@ -784,6 +784,7 @@ text-align: center;
 .grid-view{
   display: grid;
   grid-template-columns: repeat(2,1fr);
+  gap: 20px;
   
 }
 .grid-text{
@@ -1162,24 +1163,7 @@ span{
 }
 /* MEDIA */
 
-@media screen and (max-width: 900px) {
-   .fourth-seg{
-    grid-template-columns: 1fr;
-
-   }
-   .fourth-seg img{
-    width: 100%;
-   }
-   .Scard{
-    width: 80%;
-   }
-   .text-seg{
-    width: 90%;
-    padding: 20px;
-   }
-}
-
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1024px) {
   li{
     display: flex;
     justify-content: space-between;
@@ -1250,6 +1234,61 @@ span{
       font-size: 20px;
     }
      
+   .fourth-seg{
+    grid-template-columns: 1fr;
+
+   }
+   .fourth-seg img{
+    width: 100%;
+   }
+   .Scard{
+    width: 80%;
+   }
+   .text-seg{
+    width: 90%;
+    padding: 20px;
+   }
+   .footer-grid{
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+   }
+   .grid-sec{
+    grid-template-columns: repeat(2,1fr);
+   }
+   .home-cont{
+    width: 80%;
+   }
+   .home-cont h1{
+    font-size: 65px;
+    margin-top: 40px;
+   }
+   .sub-text p{
+    font-size: 24px;
+   }
+   .section-two h2{
+    width: 100%;
+   }
+   .text-seg h1{
+    font-size: 30px;
+   }
+   .text-seg{
+    width: 80%;
+   }
+   .Login{
+    grid-template-columns: 1fr;
+   }
+   .grid-view{
+    grid-template-columns: 1fr;
+   }
+   .grid-view img{
+    width: 100%;
+   }
+   .linked-titles{
+    padding: 20px 0;
+   }
+
+}
+
+@media screen and (max-width: 768px) {
   
     /* HOME PAGE */
     .home-cont,
@@ -1332,6 +1371,17 @@ span{
     .text-seg button{
       font-size: 20px;
       align-self: center;
+    }
+    .grid-sec{
+      grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    }
+    .card img,
+    .card h2{
+      align-self: center;
+      text-align: center;
+    }
+    .footer-grid{
+      grid-template-columns: 1fr;
     }
     /* LOGIN MEDIA CSS */
     img.login-img{
