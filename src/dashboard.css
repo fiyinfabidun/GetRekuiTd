@@ -289,6 +289,109 @@ aside h3{
   display: none;
 }
 
+/* JOB TRACKER */
+.job-tracker-table {
+  width: 95%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: var(--White-color);
+  padding: 20px;
+  border-radius: 20px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+
+}
+
+th, td {
+  padding: 20px;
+  text-align: left;
+  border-bottom: 1px solid #ECEEEE;
+  font-family: 'sharp sans';
+}
+th{
+  color: #64687C;
+  font-size: 14px;
+}
+td{
+  color: #020827;
+  font-family: 'semibold';
+}
+
+.status-cell {
+  display: flex;
+  align-items: center;
+}
+
+.status-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.status-indicator.applied {
+  background-color: blue;
+}
+
+.status-indicator.interview {
+  background-color: orange;
+}
+
+.status-indicator.rejected {
+  background-color: red;
+}
+
+.status-indicator.offer{
+  background-color: green;
+}
+
+/* Pagination styling */
+.pagination-controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.page-info {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.page-info span{
+  padding: 15px 10px;
+  background-color:var(--bgg);
+  border: 1px solid #ECEEEE;
+  border-radius: 12px;
+  margin-left: 5px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #036df5;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #025cb2;
+}
+
+.gif-render h2{
+  color: #111d63;
+  font-size: 48px;
+  font-family: 'bold-sharp';
+  padding-top: 20px;
+}
+
+
 
 
 
