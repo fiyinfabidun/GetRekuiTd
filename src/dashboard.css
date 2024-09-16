@@ -307,7 +307,9 @@ aside h3{
   aside{
     z-index: 3;
     width: 16rem;
+    position: relative;
   }
+
   .sidebar .ttl h3,
   .logout .lg h3{
     display: inline;
