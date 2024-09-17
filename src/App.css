@@ -1170,6 +1170,84 @@ span{
   padding: 10px 0;
 }
 
+/* fix resume css */
+.fix-resume{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  border-radius: 20px;
+}
+.modal.auto{
+  /* background-color: pink; */
+  width: 65%;
+  /* height: 60vh; */
+  padding: 0px;
+}
+.fix-resume .first{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 30px;
+}
+.fix-resume .side-second-seg{
+  padding: 10px;
+  background-color: #CDD0DF33;
+  padding: 30px;
+}
+.header-texts p{
+  font-size: 16px;
+  color: #64687C;
+}
+.para-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid #8F919B1A;
+}
+.para-head span{
+  font-size: 24px;
+  color: #233BC9;
+}
+.first .buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.para{
+  border: 1px solid #8F919B1A;
+}
+.para p{
+  width: 80%;
+  margin: auto;
+  font-size: 14px;
+  padding: 10px;
+  font-family: 'semibold';
+}
+.text-suggested p,
+.side-text-section p{
+  font-size: 14px;
+  padding: 10px 0;
+  color: #64687C;
+}
+.text-suggested h3,
+.header-texts h4{
+  font-size: 15px;
+  color: #233BC9;
+}
+.text-suggested > div{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0;
+  color: #A3B2C6;
+}
+.icon-aside{
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+}
 /* MEDIA */
 
 @media screen and (max-width: 1024px) {

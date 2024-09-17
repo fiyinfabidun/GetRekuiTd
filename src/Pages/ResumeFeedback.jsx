@@ -12,14 +12,22 @@ import SectionsComponent from '../Components/SectionsComponent';
 import SkillsComponent from '../Components/SkillsComponent';
 import { GrDocumentDownload } from "react-icons/gr";
 import ResumeView from '../Components/ResumeView';
-import threedee from '../Images/3d.png'
+import threedee from '../Images/3d.png';
 import { TfiArrowCircleRight } from "react-icons/tfi";
 import { Link } from 'react-router-dom';
+import Modal from 'react-modal';
+import FixResume from '../Components/FixResume';
+
+// Set up modal style
+Modal.setAppElement('#root');
 
 function ResumeFeedback() {
-  
   const [activeFirstSection, setActiveFirstSection] = useState('relevancy');  
   const [activeFeedback, setActiveFeedback] = useState('impact');  
+  const [isFixModalOpen, setIsFixModalOpen] = useState(false); 
+
+  const openFixModal = () => setIsFixModalOpen(true);
+  const closeFixModal = () => setIsFixModalOpen(false);
 
   return (
     <>
@@ -55,15 +63,18 @@ function ResumeFeedback() {
         <div className="review-nav">
           <h2 style={{ color: '#111d63' }}>My CV board</h2>
           <div className="buttons">
-            <button style={{ background: '#F2F7FF', color: 'black', margin: '15px' }}> <p><Link to='/tailoredJobs'>My Tailored jobs</Link></p></button>
-            <button style={{ backgroundColor: '#111d63', color: 'white' }}>Auto Fix all</button>
+            <button style={{ background: '#F2F7FF', color: 'black' }}> 
+              <p><Link to='/tailoredJobs'>My Tailored jobs</Link></p>
+            </button>
+            <button style={{ backgroundColor: '#111d63', color: 'white' }} onClick={openFixModal}>
+              <p>Auto Fix All</p>
+            </button>
           </div>
         </div>
 
         {/* Main Grid Housing the Two Sections */}
         <div className="main-grid">
           <section className="feedback">
-            {/* First section (Relevancy Score / Overall Resume Score) */}
             <div className="first">
               <div className="header" style={{ display: 'flex', gap: '6px' }}>
                 <h4
@@ -87,13 +98,8 @@ function ResumeFeedback() {
 
             {/* Second section (Feedback) */}
             <div className="second">
-              <h4 style={{
-                padding: '25px 0',
-                color:'#111d63'
-              }} className='hh'>Feedback</h4>
-              <h4 style={{
-                padding:'10px 0'
-              }}>You should improve your resume in the following areas</h4>
+              <h4 style={{ padding: '25px 0', color: '#111d63' }} className='hh'>Feedback</h4>
+              <h4 style={{ padding: '10px 0' }}>You should improve your resume in the following areas</h4>
               <div className="header-links">
                 <h3
                   onClick={() => setActiveFeedback('impact')}
@@ -127,7 +133,6 @@ function ResumeFeedback() {
                 </h3>
               </div>
               <div className="feedback-content">
-                {/* Show Impact component by default */}
                 {activeFeedback === 'impact' && <ImpactComponent />}
                 {activeFeedback === 'brevity' && <BrevityComponent />}
                 {activeFeedback === 'style' && <StyleComponent />}
@@ -136,35 +141,39 @@ function ResumeFeedback() {
               </div>
             </div>
 
-            <div className="check-it-out" style={{
-                display:'flex',
-                padding:'20px 0'
-            }}>
-                <img src={threedee} alt="" />
-                <div className='btn-blu'>
-                    <p> There are over 5000 jobs that suites your resume</p>
-                    <h4> check it out <TfiArrowCircleRight /></h4>
-                </div>
+            <div className="check-it-out" style={{ display: 'flex', padding: '20px 0' }}>
+              <img src={threedee} alt="" />
+              <div className='btn-blu'>
+                <p> There are over 5000 jobs that suit your resume</p>
+                <h4> check it out <TfiArrowCircleRight /></h4>
+              </div>
             </div>
           </section>
 
           <section className="preview">
-
             <div className="Pre-link">
-
               <h3>Preview</h3>
-
               <div className="pre-link-head">
                 <p>Change Resume</p>
                 <p> Download <GrDocumentDownload /></p>
               </div>
-
             </div>
             <div className="content">
-                <ResumeView/>
+              <ResumeView />
             </div>
           </section>
         </div>
+
+        {/* Modal for Auto Fix All */}
+        <Modal
+          isOpen={isFixModalOpen}
+          onRequestClose={closeFixModal}
+          contentLabel="Fix Resume"
+          className="modal auto"
+          overlayClassName="modal-overlay"
+        >
+          <FixResume onClose={closeFixModal} /> {/* Pass the closeFixModal function as a prop */}
+        </Modal>
       </div>
     </>
   );
@@ -176,8 +185,8 @@ const activeLink = {
   backgroundColor: '#F9f9ff',
 };
 const activeLinks = {
-    color:'#4042e2',
-    borderBottom: '2px solid #4042e2'
-    
+  color: '#4042e2',
+  borderBottom: '2px solid #4042e2'
 }
+
 export default ResumeFeedback;

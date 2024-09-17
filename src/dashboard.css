@@ -435,7 +435,7 @@ td{
   background-color: white;
   padding: 20px;
   border-radius: 8px;
-  max-width: 400px;
+  width: 400px;
   margin: 100px auto;
   position: relative;
   font-family: 'sharp sans';
