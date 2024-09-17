@@ -968,6 +968,14 @@ span{
   align-items: center;
   text-align: center;
   gap: 5px;
+  color: #000316;
+}
+.review-nav a{
+  color: #000316;
+}
+.back a{
+  color: #000316;
+  font-family: 'semibold';
 }
 .preview{
   background-color: var(--bgg);
@@ -1286,6 +1294,56 @@ span{
    .linked-titles{
     padding: 20px 0;
    }
+   /* TAILORED JOBS */
+   .tailored-grid{
+    grid-template-columns: 1fr;
+    padding: 20px 0;
+    gap: 10px;
+    text-align: center;
+  }
+  .price{
+    flex-direction: column;
+    padding: 10px 0;
+  
+  
+  }
+  .tailored-grid .text >div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 0;
+    gap: 15px;
+    justify-content: left;
+    align-items: flex-start;
+  
+  }
+  .tailored-grid .first-img{
+    width: 400px;
+  }
+  .tailored-grid .text h2{
+    font-size: 30px;
+    text-align: center;
+  }
+  .tailored-grid .text .card p{
+    width: 100%;
+    text-align: center;
+  }
+  .tailored-grid .text .card h2{
+    text-align: center;
+    align-self: center;
+    font-size: 18px;
+  }
+  .tailored-grid .text .card img{
+    align-self: center;
+  }
+  .price-box{
+    padding: 40px 60px;
+  }
+  .price-box h2{
+    font-size: 40px;
+  }
+  .main-grid{
+    grid-template-columns: 1fr;
+  }
 
 }
 

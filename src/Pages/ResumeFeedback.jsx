@@ -14,6 +14,7 @@ import { GrDocumentDownload } from "react-icons/gr";
 import ResumeView from '../Components/ResumeView';
 import threedee from '../Images/3d.png'
 import { TfiArrowCircleRight } from "react-icons/tfi";
+import { Link } from 'react-router-dom';
 
 function ResumeFeedback() {
   
@@ -47,14 +48,14 @@ function ResumeFeedback() {
         {/* Back Button */}
         <div className="back" style={{ display: 'flex', gap: '10px' }}>
           <img src={arrow} alt="arrow" />
-          <p>Back</p>
+          <p><Link to='/'>Back</Link></p>
         </div>
 
         {/* My CV Board */}
         <div className="review-nav">
           <h2 style={{ color: '#111d63' }}>My CV board</h2>
           <div className="buttons">
-            <button style={{ background: '#F2F7FF', color: 'black', margin: '15px' }}>My tailored job</button>
+            <button style={{ background: '#F2F7FF', color: 'black', margin: '15px' }}> <p><Link to='/tailoredJobs'>My Tailored jobs</Link></p></button>
             <button style={{ backgroundColor: '#111d63', color: 'white' }}>Auto Fix all</button>
           </div>
         </div>
