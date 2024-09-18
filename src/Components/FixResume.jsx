@@ -39,7 +39,7 @@ function FixResume({ onClose }) {
           <div> <VscWand /> <p style={{ color: '#A3B2C6' }}>Use this</p></div>
         </div>
         <div className="side-text-section">
-          <p> 2 more strong resume bullet points were generated. But they're for Pro users <span style={{ color: '#233BC9', fontFamily: 'semibold' }}>Unlock them instantly</span>.</p>
+          <p>2 more strong resume bullet points were generated. But they're for Pro users <span style={{ color: '#233BC9', fontFamily: 'semibold' }}>Unlock them instantly</span>.</p>
         </div>
       </div>
     </div>

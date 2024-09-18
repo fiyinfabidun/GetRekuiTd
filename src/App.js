@@ -18,6 +18,7 @@ import Jobtracker from './Pages/Dashboard/Jobtracker';
 import Myprofile from './Pages/Dashboard/Myprofile';
 import Myschedule from './Pages/Dashboard/Myschedule';
 import Overview from './Pages/Dashboard/Overview';
+import AssesmentComponent from './Components/AssesmentComponent';
 function App() {
   const ScrollToTop = () => {
     const { pathname } = useLocation();
@@ -47,6 +48,7 @@ function App() {
       <Route path='/myprofile' element={<Myprofile/>}></Route>
      <Route path='/myschedule' element={<Myschedule/>}></Route>
      <Route path='/overview' element={<Overview/>}></Route>
+     <Route path='/assesmentComponent' element={<AssesmentComponent/>}></Route>
     </Routes>
       
        

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Select from 'react-select';
 
 
@@ -51,7 +52,7 @@ function AssesmentComponent() {
     </div>
 
     <div className="buttons">
-        <button style={{backgroundColor:'#9CB3D7'}}>Back</button>
+        <button style={{backgroundColor:'#9CB3D7'}}><Link to='/'>Back</Link></button>
         <button style={{backgroundColor:'#111D63'}}>Proceed</button>
     </div>
      </div>

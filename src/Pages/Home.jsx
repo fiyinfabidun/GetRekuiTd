@@ -59,7 +59,7 @@ function Home() {
         </div>
         <div className="buttons">
             <button className='first'>
-             <Link to = '/login'>start your job search</Link> </button>
+             <Link to = '/assesment'>start your job search</Link> </button>
 
             <button className='secondd'> <Link to = '/assesment'>free cv review</Link> </button>
         </div>
