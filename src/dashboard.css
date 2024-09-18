@@ -656,7 +656,14 @@ td{
   background-color: transparent;
 }
 
-
+.update-phonenumber{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.update-phonenumber .update-btn{
+  margin-bottom: 30px;
+}
 
 
 

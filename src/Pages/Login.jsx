@@ -51,7 +51,6 @@ function Login() {
     setErrors(formErrors);
 
     if (Object.keys(formErrors).length === 0) {
-      // If no errors, submit the form
       console.log('Form submitted:', formData);
     }
   };
