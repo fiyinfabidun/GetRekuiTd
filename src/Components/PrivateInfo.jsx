@@ -62,7 +62,7 @@ const PrivateInfo = () => {
     </div>
     <div className="update-password">
       <p>update password</p>
-      <MdArrowForwardIos/>
+      {/* <MdArrowForwardIos/> */}
     </div>
     </>
   );
