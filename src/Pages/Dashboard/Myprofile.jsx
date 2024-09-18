@@ -53,8 +53,10 @@ const Myprofile = () => {
         </div>
         <div className="personal-info">
           <div className="linked-titles">
-            <p onClick={()=> setactive('personalinfo')}>Private Information</p>
-            <p onClick={()=>setactive('privateinfoAssesment')}>Need Assesment</p>
+            <p onClick={()=> setactive('personalinfo')}
+              style={active === 'personalinfo' ? activeLink : inactiveLink}>Private Information</p>
+            <p onClick={()=>setactive('privateinfoAssesment')}
+              style={active === 'privateinfoAssesment' ? activeLink: inactiveLink}>Need Assesment</p>
           </div>
           {active === 'personalinfo' && <PrivateInfo/>}
           {active === 'privateinfoAssesment' && <PrivateneedAssesment/>}
@@ -65,5 +67,16 @@ const Myprofile = () => {
     </>
   )
 }
+
+const activeLink = {
+  color: '#4042e2',
+  borderBottom: '4px solid #4042E2',
+};
+
+const inactiveLink = {
+  color: '#8f919b',  
+ 
+};
+
 
 export default Myprofile

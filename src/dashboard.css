@@ -643,8 +643,18 @@ td{
   padding: 20px 0;
   border-bottom: 2px solid #ECEEEE;
 }
-
-
+.personal-info .linked-titles p{
+  padding: 10px 20px;
+  border-bottom: 4px solid #8F919B33;
+  color: #8F919B;
+  font-size: 16px;
+}
+.personal-info .linked-titles p:hover{
+  border-bottom: 4px solid #4042E2 ;
+  color: #4042E2;
+  text-align: left;
+  background-color: transparent;
+}
 
 
 
