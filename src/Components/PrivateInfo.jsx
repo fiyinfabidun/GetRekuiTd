@@ -32,21 +32,24 @@ const PrivateInfo = () => {
 
 
   return (
+    <>
     <div className="update-phonenumber">
       <form onSubmit={handleSubmit}>
         <div className="input-container">
-          <PhoneInput
+          <PhoneInput className='ipt'
             country={'ng'} 
             value={phoneNumber}
             onChange={handlePhoneChange}
             placeholder="Enter phone number"
             inputClass={`phone-input ${error ? 'input-error' : ''}`}
             inputStyle={{
-              width: '350px',
+              width:'70%',
               paddingLeft: '50px',
-              fontSize: '16px',
+              fontSize: '13px',
               marginBottom: '10px',
               border: "0px",
+              fontFamily:'sharp sans',
+
             }}
           />
         </div>
@@ -57,6 +60,11 @@ const PrivateInfo = () => {
         <p>Update phone number</p>
       </div>
     </div>
+    <div className="update-password">
+      <p>update password</p>
+      <MdArrowForwardIos/>
+    </div>
+    </>
   );
 };
 

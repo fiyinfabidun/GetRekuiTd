@@ -143,7 +143,6 @@ aside h3{
   }
   .sidebar .ttl:hover{
     color: var(--primary-color);
-    /* border-left: 8px solid var(--primary-color); */
     transform: translateX(5px);
     padding: 10px;
   }
@@ -568,6 +567,7 @@ td{
   background-image: url('./Images/profile.png');
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
   height: 30vh;
 }
 .grid-bg{
@@ -660,9 +660,15 @@ td{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #8F919B33;
 }
 .update-phonenumber .update-btn{
   margin-bottom: 30px;
+}
+.update-phonenumber .input-container{
+  border: 1px solid #1E57A0;
+  border-radius: 10px;
 }
 
 
@@ -682,7 +688,7 @@ td{
   }
   .sidebar .ttl span,
   .logout .lg span{
-    font-size: 1.6rem;
+    font-size: 1rem;
   }
   .overview{
     grid-template-columns: auto 20rem;
@@ -703,6 +709,11 @@ td{
     overflow-x: auto;
     -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
   }
+  .component{
+  grid-template-columns: 1fr;
+  width: 100%;
+  overflow-x: auto;
+}
 }
 
 @media screen and (max-width:850px) {
@@ -714,7 +725,7 @@ td{
     grid-template-columns: auto;
   }
   .dashboard.container{
-    grid-template-columns: 6rem auto;
+    grid-template-columns: 4.2rem auto;
     gap: 0px;
     transition: all 0.3s ease;
   }
@@ -735,6 +746,24 @@ td{
   .sidebar .ttl h3.show-link{
     display: inline;
     color: #020827;
+  }
+  .each{
+   display: block;
+   text-align: left;
+  }
+  .profile-container{
+  display: block;
+
+}
+.user-applications{
+text-align: left;
+}
+
+  .personal-info .linked-titles{
+    display: block;
+  }
+  .update-phonenumber{
+    display: block;
   }
 
 }

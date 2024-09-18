@@ -96,8 +96,8 @@ const Dashboard = () => {
 
  const activeLinks = {
       color:'#4042e2',
-      borderLeft: '8px solid #4042E2',
-      transform:'translateX(5px)',
+      borderLeft: '6px solid #4042E2',
+      transform:'translateX(2px)',
       padding:'10px'
       
  }
