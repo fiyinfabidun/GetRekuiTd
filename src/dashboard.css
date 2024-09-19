@@ -678,6 +678,7 @@ td{
   border-bottom: 1px solid #8F919B33;
 }
 
+
 .resume{
   display: flex;
   justify-content: space-between;
@@ -690,6 +691,18 @@ td{
   padding: 20px;
   color: white;
   font-family: 'semibold';
+}
+.resume-link{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.resume-btn{
+  display: flex;
+  gap: 5px;
+  padding:  0px 15px;
+  border-left: 3px solid #ECEEEE;
+  text-transform: capitalize;
 }
 
 @media screen and (max-width:1280px) {
@@ -735,6 +748,15 @@ td{
 }
 .myprofile-background .image-bg{
   height: 40vh;
+}
+.dashboard.container.active{
+  grid-template-columns: 18rem auto;
+  display: fixed;
+  z-index: 3;
+}
+.sidebar .ttl h3.show-link{
+  display: inline;
+  color: #020827;
 }
 }
 
@@ -786,6 +808,17 @@ text-align: left;
   }
   .update-phonenumber{
     display: block;
+  }
+  .resume{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: self-start;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .resume-btn{
+    padding: 0px 0px;
+    border-left: none;
   }
 
 }

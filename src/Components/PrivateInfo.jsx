@@ -66,10 +66,25 @@ const PrivateInfo = () => {
       <IoIosArrowForward/>
     </div>
     <div className="reume-pdf" style={{
-      padding:'10px'
+      padding:'30px'
     }}>
-      <h3>resume</h3>
+      <h3 style={{
+        padding:'10px 0'
+      }}>resume</h3>
       <div className="resume-link">
+
+        <div className="resume">
+          <p className='pdf'>PDF</p>
+          <div className="resume-name">
+            <p>Sean Paul pdf</p>
+            <p>last reviewded 3/10/24</p>
+          </div>
+          <div className="resume-btn">
+            <p>remove</p>
+            <p>review</p>
+          </div>
+        </div>
+
         <div className="resume">
           <p className='pdf'>PDF</p>
           <div className="resume-name">
