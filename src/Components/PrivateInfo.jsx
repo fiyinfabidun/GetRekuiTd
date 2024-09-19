@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
+import {IoIosArrowForward } from "react-icons/io";
 
 
 const PrivateInfo = () => {
@@ -62,7 +63,25 @@ const PrivateInfo = () => {
     </div>
     <div className="update-password">
       <p>update password</p>
-      {/* <MdArrowForwardIos/> */}
+      <IoIosArrowForward/>
+    </div>
+    <div className="reume-pdf" style={{
+      padding:'10px'
+    }}>
+      <h3>resume</h3>
+      <div className="resume-link">
+        <div className="resume">
+          <p className='pdf'>PDF</p>
+          <div className="resume-name">
+            <p>Sean Paul pdf</p>
+            <p>last reviewded 3/10/24</p>
+          </div>
+          <div className="resume-btn">
+            <p>remove</p>
+            <p>review</p>
+          </div>
+        </div>
+      </div>
     </div>
     </>
   );

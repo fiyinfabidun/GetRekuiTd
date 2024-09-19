@@ -565,8 +565,8 @@ td{
 }
 .myprofile-background .image-bg{
   background-image: url('./Images/profile.png');
-  background-position: center;
-  background-size: contain;
+  background-position: right;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 30vh;
 }
@@ -670,8 +670,27 @@ td{
   border: 1px solid #1E57A0;
   border-radius: 10px;
 }
+.update-password{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #8F919B33;
+}
 
-
+.resume{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+.resume .pdf{
+  background-color: red;
+  border-radius: 5px;
+  padding: 20px;
+  color: white;
+  font-family: 'semibold';
+}
 
 @media screen and (max-width:1280px) {
   .dashboard.container{
@@ -713,6 +732,9 @@ td{
   grid-template-columns: 1fr;
   width: 100%;
   overflow-x: auto;
+}
+.myprofile-background .image-bg{
+  height: 40vh;
 }
 }
 
