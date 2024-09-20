@@ -10,7 +10,7 @@ import { FaPen } from "react-icons/fa6";
 import { IoIosArrowDropright } from "react-icons/io";
 import RecentSearches from './RecentSearches';
 import gif from '../../Images/giff.gif'
-const scoreValue = 85;
+const scoreValue = 65;
 const getColorBasedOnScore = (score) => {
   if (score >= 80) {
     return '#81e878'; // Green

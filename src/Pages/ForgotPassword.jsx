@@ -35,7 +35,7 @@ function ForgotPassword() {
         <div className="pass-flex">
 
           <div className="requirements">
-            <p className='link-back'><Link to='/login'>Go back</Link></p>
+            <button className='link-back' style={{backgroundColor:'#3FA3EC',padding:'20px 30px'}}><Link style={{color:'white'}}to='/login'>Go back</Link></button>
             <div className="re">
             <img src={pad} alt="Padlock" />
             <h2>Forgot Password?</h2>

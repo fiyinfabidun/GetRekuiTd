@@ -25,7 +25,7 @@ const Myprofile = () => {
           alt="Profile" 
           className="profile-img" 
         />
-        <FaCamera className="icon" />
+        <FaCamera className="iconn" />
       </div>
     </div>
               <div className="user-applications">

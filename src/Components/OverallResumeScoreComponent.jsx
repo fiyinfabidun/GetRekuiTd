@@ -2,7 +2,7 @@ import React from 'react';
 import { CircularProgressbar,buildStyles } from 'react-circular-progressbar';
 
 function OverallResumeScoreComponent() {
-    const score = 81;
+    const score = 32;
   return (
     <div className="relevancy-score-content">
             <div className='cpb'>
