@@ -121,7 +121,7 @@ aside h3{
   }
   .sidebar .ttl,
   .top .log,
-  .logout .lg{
+  .logout .lg a{
     font-size: 14px;
     display: flex;
     align-items: center;
