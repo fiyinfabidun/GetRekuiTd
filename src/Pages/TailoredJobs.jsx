@@ -17,10 +17,10 @@ function TailoredJobs() {
         <div className="container">
           <div className="home-cont tailor"> 
         <div className="text-centre">
-         <h1>Streamline Your <i>job</i> Application Process</h1>
+         <h1 data-aos='fade-up'>Streamline Your <i>job</i> Application Process</h1>
         </div>
         <div className="sub-text">
-         <p>
+         <p data-aos='fade-up' data-aos-delay='300'>
          Personalized job applications that save you time and increase your chances of landing the perfect job.
          </p>
         </div>
@@ -39,7 +39,7 @@ function TailoredJobs() {
               <img src={tailor} alt="" className='first-img' />
             <div className="text">
                 <h2>This is what we do differently</h2>
-                <div>
+                <div data-aos='fade-up'>
                 <Card
                 image={note}
                 title='Tailored Applications'
@@ -67,29 +67,29 @@ function TailoredJobs() {
                     fontSize:'48px',
                     color:'white'
                 }}>How It Works</h2>
-                <p> Get seen by over 100 millions of job employers across the globe</p>
+                <p data-aos='fade-up'>  Get seen by over 100 millions of job employers across the globe</p>
                 <div className="blueSeg-grid">
-                      <div>
+                      <div data-aos='fade-up'>
                         <h3>1</h3>
                         <h2 style={{
                             color:'white'
                         }}>Create a Profile</h2>
                         <p>We pull your Job reference from your need assessment and CV</p>
                       </div>
-                      <div>
+                      <div data-aos='fade-up' data-aos-delay='200'>
                         <h3>2</h3>
                          <h2 style={{
                             color:'white'}}>
                         Get Matched</h2>
                         <p>Get matched with mentors to walk you through hands-on learning, interview preps and simulation</p>
                       </div>
-                      <div>
+                      <div data-aos='fade-up' data-aos-delay='400'>
                         <h3>3</h3>
                         <h2 style={{
                             color:'white'}}>Live Webinars and Classes</h2>
                         <p>Join our masterclasses and live webinar for free</p>
                       </div>
-                      <div>
+                      <div data-aos='fade-up' data-aos-delay='600'>
                         <h3>4</h3>
                         <h2 style={{
                             color:'white'}}>Track & Prepare</h2>

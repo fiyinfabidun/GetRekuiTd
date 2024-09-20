@@ -115,7 +115,7 @@ function Home() {
             <p>Our professional human resource and career professionals are ready to guide you through.</p>
             <button>Schedule Consultation</button>
           </div>
-            <img src={people} alt="" />
+            <img src={people} alt="" data-aos='fade-left' />
          
         </div>
         <div className="slider">
