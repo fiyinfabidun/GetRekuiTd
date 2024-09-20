@@ -172,7 +172,7 @@ function ResumeFeedback() {
           className="modal auto"
           overlayClassName="modal-overlay"
         >
-          <FixResume onClose={closeFixModal} /> {/* Pass the closeFixModal function as a prop */}
+          <FixResume onClose={closeFixModal} />
         </Modal>
       </div>
     </>

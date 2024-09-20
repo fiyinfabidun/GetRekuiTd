@@ -704,6 +704,15 @@ td{
   border-left: 3px solid #ECEEEE;
   text-transform: capitalize;
 }
+.radio-group label{
+  font-family: 'semibold';
+  font-size: 16px;
+  padding: 10px;
+}
+.radio-input{
+  width: 40px;
+}
+
 
 @media screen and (max-width:1280px) {
   .dashboard.container{
@@ -758,6 +767,7 @@ td{
   display: inline;
   color: #020827;
 }
+
 }
 
 @media screen and (max-width:850px) {

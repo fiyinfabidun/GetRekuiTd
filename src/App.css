@@ -1422,6 +1422,9 @@ span{
   .main-grid{
     grid-template-columns: 1fr;
   }
+  .fix-resume{
+    grid-template-columns: 1fr;
+  }
 
 }
 
@@ -1755,5 +1758,14 @@ padding: 50px;
 }
 .pay-grid p{
   width: 90%;
+}
+.modal.auto{
+  width: 90%;
+  overflow-y: auto;
+  position: relative;
+  height: 80vh;
+}
+.fix-resume{
+  overflow-y: auto;
 }
 }
