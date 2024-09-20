@@ -45,15 +45,15 @@ const Myschedule = () => {
 
   // Open the delete confirmation modal
   const handleDoubleClickEvent = (event) => {
-    setSelectedEvent(event); // Store the event to be deleted
-    setDeleteModalOpen(true); // Open the delete confirmation modal
+    setSelectedEvent(event); 
+    setDeleteModalOpen(true);
   };
 
   // Confirm deletion of event
   const confirmDeleteEvent = () => {
-    setEvents(events.filter((e) => e !== selectedEvent)); // Delete the event
-    setDeleteModalOpen(false); // Close the delete modal
-    setSelectedEvent(null); // Clear selected event
+    setEvents(events.filter((e) => e !== selectedEvent)); 
+    setDeleteModalOpen(false); 
+    setSelectedEvent(null); 
   };
 
   const eventStyleGetter = (event) => {

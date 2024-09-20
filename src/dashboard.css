@@ -714,6 +714,7 @@ td{
 }
 
 
+
 @media screen and (max-width:1280px) {
   .dashboard.container{
     grid-template-columns: 7rem auto;
@@ -829,6 +830,19 @@ text-align: left;
   .resume-btn{
     padding: 0px 0px;
     border-left: none;
+  }
+  .custom-toolbar{
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .custom-toolbar button{
+    font-size: 1rem;
+    margin: 0px 0px;
+  }
+  .custom-toolbar span{
+    font-size: 1rem;
   }
 
 }

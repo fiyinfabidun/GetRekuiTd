@@ -50,9 +50,9 @@ function Home() {
         <div className="container">
           <div className="home-cont"> 
         <div className="text">
-         <h1>First AI Job application and support platform</h1>
+         <h1 data-aos='fade-right'>First AI Job application and support platform</h1>
         </div>
-        <div className="sub-text">
+        <div className="sub-text" data-aos='fade-right' data-aos-delay='500'>
          <p>
          Land your dream job with personalized preparation and expert guidance aided with our AI-powered job processing platform
          </p>
@@ -80,13 +80,13 @@ function Home() {
              <img src={mail} alt="" />
              <img src={micro} alt="" />
             </div>
-            <h2><b>Land your dream job faster</b> with personalized support every step of the way.</h2>
-            <p>Never face the job search alone. Our app connects you with a dedicated mentor, personalizes your CV for success, and equips you with interview skills through realistic simulations and expert feedback. Land your dream job faster with all-in-one support.</p>
+            <h2 data-aos='fade-up'><b>Land your dream job faster</b> with personalized support every step of the way.</h2>
+            <p data-aos='fade-up' data-aos-delay='200'>Never face the job search alone. Our app connects you with a dedicated mentor, personalizes your CV for success, and equips you with interview skills through realistic simulations and expert feedback. Land your dream job faster with all-in-one support.</p>
         </div>
         <div className="third-section">
             <div className="container">
           <h1>Unleash your full potential and land your dream job in 4 easy steps</h1>
-          <div className="grid-sec">
+          <div className="grid-sec" data-aos='fade-up'>
             <Card
             image={note}
             title="Get Career Roadmap"
@@ -108,8 +108,8 @@ function Home() {
         </div>
         <div className="fourth-seg">
           <div className="text-seg">
-            <h4>Interview Prep Consultation</h4>
-            <h1>
+            <h4 data-aos='fade-up'>Interview Prep Consultation</h4>
+            <h1 data-aos='fade-up' data-aos-delay='200'>
             Schedule an interview Prep Consultation on behavioral and technical interviews
             </h1>
             <p>Our professional human resource and career professionals are ready to guide you through.</p>
