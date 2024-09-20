@@ -24,7 +24,7 @@ const Dashboard = () => {
         <div  className={iss?'dashboard container active':'dashboard container'}>
           <aside>
             <div className="top">
-              <div className="log">
+              <div className="log dashh">
                 <img src={logo} alt="logo" />
                 <h2 style={{ fontSize: '18px' }}>GetReKuitd</h2>
                 <div className="close" onClick={()=>Sww(!iss)}>

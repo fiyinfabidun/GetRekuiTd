@@ -59,29 +59,29 @@ const Overview = () => {
             </div>
           </div>
 
-          <div className="overview-cards">
-            <div className="vcard" data-aos='fade-up'>
+          <div className="overview-cards" data-aos='fade-up'>
+            <div className="vcard">
               <div className="v-icon">
                 <MdOutlineBusinessCenter />
               </div>
               <h4>Total Applications</h4>
               <p>15</p>
             </div>
-            <div className="vcard" data-aos='fade-up' data-aos-delay='200'>
+            <div className="vcard">
               <div className="v-icon">
                 <GoPeople />
               </div>
               <h4>Total Interviews</h4>
               <p>7</p>
             </div>
-            <div className="vcard" data-aos='fade-up' data-aos-delay='400'>
+            <div className="vcard">
               <div className="v-icon">
                 <PiHandshakeLight />
               </div>
               <h4>Total Offers</h4>
               <p>4</p>
             </div>
-            <div className="vcard" data-aos='fade-up' data-aos-delay='700'>
+            <div className="vcard">
               <div className="v-icon">
                 <PiWarningCircleLight />
               </div>
@@ -111,7 +111,7 @@ const Overview = () => {
 
         {/* SECOND PART OF THE OVERVIEW */}
 
-        <div className="last-overview" data-aos='fade-up' data-aos-delay='600'>
+        <div className="last-overview">
           <div className="profile">
             <h3>Profile Relevance</h3>
             <div className="cpb">

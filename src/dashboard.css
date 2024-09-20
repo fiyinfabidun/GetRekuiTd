@@ -116,11 +116,11 @@ aside h3{
     flex-direction: column;
     gap: 80px;
   }
-  .top .log{
+  .top .log.dashh{
      padding-top:20px;
   }
   .sidebar .ttl,
-  .top .log,
+  .top .log.dashh,
   .logout .lg a{
     font-size: 14px;
     display: flex;
@@ -719,8 +719,8 @@ td{
   .dashboard.container{
     grid-template-columns: 7rem auto;
   }
-  .log h2,
-  .log img{
+  .log .dashh h2,
+  .log .dashh img{
     display: none;
   }
   .sidebar .ttl h3,
