@@ -59,7 +59,7 @@ const Overview = () => {
             </div>
           </div>
 
-          <div className="overview-cards" data-aos='fade-up'>
+          <div className="overview-cards">
             <div className="vcard">
               <div className="v-icon">
                 <MdOutlineBusinessCenter />
