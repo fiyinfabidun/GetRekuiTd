@@ -719,7 +719,7 @@ td{
   .dashboard.container{
     grid-template-columns: 7rem auto;
   }
-  .log .dashh h2,
+  .log.dashh h2,
   .log .dashh img{
     display: none;
   }
