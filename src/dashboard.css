@@ -720,7 +720,7 @@ td{
     grid-template-columns: 7rem auto;
   }
   .log.dashh h2,
-  .log .dashh img{
+  .log.dashh img{
     display: none;
   }
   .sidebar .ttl h3,
